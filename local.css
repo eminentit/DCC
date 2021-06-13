@@ -692,6 +692,7 @@ End Layout
 /* Set Logo Image Size */
 .nav-container .bar .logo{
 	max-height: 80px;
+	display:none;
 }
 
 .nav-container{
@@ -702,7 +703,7 @@ End Layout
 .nav-container .site-branding .navbar-text{
 	padding-left: 15px;
 	margin-top: 0px;
-	display: inline-block;
+	display: none;
 	color: #FFFFFF;
 }
 

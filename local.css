@@ -710,6 +710,15 @@ End Layout
 /* Site Title */
 .nav-container .site-branding .navbar-brand{
 	color: #FFFFFF;
+	padding-left: 0px;
+}
+	
+.hamburger-toggle i {
+   	color: #fff;
+}
+	
+.bar .menu-horizontal {
+	margin-left: 15px;
 }
 
 }

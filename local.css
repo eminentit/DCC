@@ -24,10 +24,11 @@ Table of Contents:
    3.6 Tablet 3
 	   3.61 FMA Image
    3.7 Phone
-       3.71 Image Vertial Rule
+       3.71 Image Vertical Rule
 	   3.72 FMA Image
 	   3.73 Sidebar
 	   3.74 Featured Image Gallery
+	   3.75 Mobile Footer
    
 4. Components
    4.1 Header menu
@@ -528,6 +529,11 @@ footer .social-list {
 	margin-bottom: 0px;
 }
 
+/* 3.75 Mobile Footer */
+.block-footer--short .container{
+	margin-left:0px;
+}
+	
 }
 /*================================
 End Layout      

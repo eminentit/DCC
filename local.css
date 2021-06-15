@@ -65,6 +65,7 @@ Table of Contents:
    4.32 Tab Division Item 
    4.33 Custom Modal
    4.34 Contact US
+   4.35 Job exploration tool
 =================================*/
 
 
@@ -2745,7 +2746,288 @@ ul.ul--standard{
 	border-color: #79242f !important;
 }
 
+/* 4.35 Job Exploration Tool */
 
+.breadcrumb {
+    display: none;
+  }
+
+  .jet-container {
+    background: #fff;
+  }
+
+  .jet-content {
+    padding: 60px 100px;
+    background: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+  }
+
+  .jet-content-steps {
+    padding: 60px 100px;
+    background: #fff;
+    margin: 0px auto;
+  }
+
+  .jet-section-body-text {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #000;
+  }
+
+  .jet-btn {
+    background-color: #284a82 !important;
+    font-size: 1.3em;
+    padding: 5px 40px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .jet-btn:hover,
+  .jet-btn:focus,
+  .jet-btn.focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2d518f;
+  }
+
+  .jet-select-fields {
+    background-color: #284a82;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+
+  }
+
+  .dropdown-menu {
+    left: 15px !important;
+  }
+
+  #jet-progressbar {
+    position: absolute;
+    left: 35px;
+    overflow: hidden;
+    color: #E53935
+  }
+
+  #jet-progressbar li {
+    list-style-type: none;
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 36px;
+  }
+
+  #jet-progressbar .step0:before {
+    content: "";
+    color: #fff
+  }
+
+  #jet-progressbar li:before {
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    display: block;
+    font-size: 20px;
+    background: #fff;
+    border: 3px solid #1b3054;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+
+  #jet-progressbar li:after {
+    content: '';
+    width: 3px;
+    height: 36px;
+    background: #182c4e;
+    position: absolute;
+  }
+
+  #jet-progressbar li:last-child:after {
+    top: 147px;
+    height: 0px
+  }
+
+  #jet-progressbar li.active:before {
+    background: #00C151;
+    font-family: FontAwesome;
+    content: "\f00c"
+  }
+
+  .mb-5,
+  .my-5 {
+    margin-bottom: 2.2rem !important;
+    color: #182e4f;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+
+
+  .card1 {
+    margin-left: 70px;
+    z-index: 0;
+    border-right: 1px solid #F5F5F5
+  }
+
+  #jet-step-number {
+    width: 60px;
+    height: 60px;
+    line-height: 19px;
+    display: block;
+    font-size: 32px;
+    background: #fff;
+    border: 8px solid #E3E8F1;
+    border-radius: 50%;
+    margin: auto;
+    padding: 11px 2px 0 0;
+    font-weight: 900;
+    color: #2D508E;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .jet-h2-heading {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 50px;
+    color: #284982;
+  }
+
+  .jet-h3-heading {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #284982;
+    margin-bottom: 50px;
+  }
+
+  .jet-h4-heading {
+    font-size: 16px;
+    font-weight: 900;
+    color: #284982;
+    padding: 8px 10px;
+    border: 1px solid #284982;
+    border-radius: 8px;
+  }
+
+  .jet-h5-heading {
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: text-bottom;
+  }
+
+  .jet-step-button {
+    font-size: 16px;
+    font-weight: 400;
+    background: #284982;
+    padding: 8px 10px;
+    border: 1px solid #284982;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+    color: #fff;
+  }
+
+  .form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+  }
+
+  .form-check-input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -1.25rem;
+  }
+
+  .form-check-label {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  .jet-checkbox-dropdown {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 20px !important;
+    line-height: 17px !important;
+    height: 17px;
+    border: 1px solid #3a3a3a !important;
+    border-radius: 6px !important;
+    -webkit-appearance: auto !important;
+    vertical-align: middle !important;
+  }
+
+  .jet-buttons {
+    margin-top: 60px;
+  }
+
+  .jet-back-button {
+    color: #284982;
+    /*width: 50px;*/
+    border: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right !important;
+
+
+  }
+
+  .jet-civilian-careers {
+    background: #FFFFFF;
+    border: 3px solid #284982;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+  }
+
+  .jet-start-over-button {
+    background: #FFFFFF;
+    border: 1px solid #2A76A3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+  .jet-result-card2 {
+    width: 356px;
+    border: 1px solid #284982;
+    box-sizing: border-box;
+    border-radius: 8px;
+    float: left;
+    margin-right: 40px;
+    padding-bottom: 20px;
+  }
+
+  .jet-result-card2 img {
+    margin-bottom: 20px;
+  }
+
+  .jet-result-header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #343434;
+
+  }
+
+  .jet-result-body {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #343434;
+  }
+
+  .jet-result-card2-body {
+    padding: 10px 20px;
+  }
 
 /* Streamline fonts */
 @font-face {
